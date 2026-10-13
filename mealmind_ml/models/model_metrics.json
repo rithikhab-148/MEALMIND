@@ -1,0 +1,68 @@
+{
+  "demand_prediction": {
+    "champion_model": "GradientBoostingRegressor",
+    "all_models": {
+      "LinearRegression": {
+        "MAE": 4.302,
+        "RMSE": 6.061,
+        "R2": 0.9567
+      },
+      "RandomForestRegressor": {
+        "MAE": 2.488,
+        "RMSE": 3.917,
+        "R2": 0.9819
+      },
+      "GradientBoostingRegressor": {
+        "MAE": 2.37,
+        "RMSE": 3.202,
+        "R2": 0.9879
+      }
+    },
+    "selected_metrics": {
+      "MAE": 2.37,
+      "RMSE": 3.202,
+      "R2": 0.9879
+    }
+  },
+  "waste_risk_classification": {
+    "champion_model": "LogisticRegression",
+    "all_models": {
+      "LogisticRegression": {
+        "Accuracy": 0.807,
+        "Precision": 0.8447,
+        "Recall": 0.807,
+        "F1_Score": 0.7374
+      },
+      "RandomForestClassifier": {
+        "Accuracy": 0.8012,
+        "Precision": 0.8412,
+        "Recall": 0.8012,
+        "F1_Score": 0.7209
+      }
+    },
+    "selected_metrics": {
+      "Accuracy": 0.807,
+      "Precision": 0.8447,
+      "Recall": 0.807,
+      "F1_Score": 0.7374
+    }
+  },
+  "features": {
+    "categorical": [
+      "day_of_week",
+      "meal_type",
+      "food_item"
+    ],
+    "numerical": [
+      "is_weekend",
+      "expected_attendance",
+      "meal_confirmations",
+      "food_rating",
+      "food_cost",
+      "holiday",
+      "exam_period",
+      "event_day",
+      "historical_waste"
+    ]
+  }
+}
